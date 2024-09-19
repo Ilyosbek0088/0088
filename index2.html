@@ -1,97 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Age Verification</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Verification</title>
 </head>
 <body>
-  <style>
-    
-  </style>
-  <div id="div">You are younger than 18 bro😂</div>
-  <div id="divv">Maaaan You are older than 60 🤪</div>
-  <div id="helloJamshid">Hello Jamshid</div>
-  <section id="bod">
-    <form action="https://www.t.me/+998334345438">
-      <input placeholder="Enter Your Name" required class="input" type="text" name="" id="">
-      <a href="https://youtu.be/dQw4w9WgXcQ?si=qfx9S0382k42hR7p" class="submit">Submit</a>
-    </form>
-  </section>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      let age = +prompt("Confirm Your Age");
-
-      let div = document.getElementById('div');
-      let divv = document.getElementById('divv');
-      let helloJamshid = document.getElementById('helloJamshid');
-      let bod = document.getElementById('bod');
-
-      // Hide all elements initially
-      div.style.display = 'none';
-      divv.style.display = 'none';
-      helloJamshid.style.display = 'none';
-      bod.style.display = 'none';
-
-      if (isNaN(age) || age < 0) {
-        // Handle invalid or negative age (no divv2 anymore)
-        bod.style.display = 'none';
-        div.style.display = 'flex';
-        div.style.height = '100vh';
-        div.style.width = '100%';
-        div.style.backgroundColor = 'red';
-        div.style.color = 'white';
-        div.style.alignItems = 'center';
-        div.style.justifyContent = 'center';
-        div.style.fontFamily = 'cursive';
-        div.style.fontWeight = '900';
-        div.style.fontSize = '70px';
-      } else if (age === 23) {
-        // Display "Hello Jamshid" when age is 23
-        helloJamshid.style.display = 'flex';
-        helloJamshid.style.height = '100vh';
-        helloJamshid.style.width = '100%';
-        helloJamshid.style.backgroundColor = 'green';
-        helloJamshid.style.color = 'white';
-        helloJamshid.style.alignItems = 'center';
-        helloJamshid.style.justifyContent = 'center';
-        helloJamshid.style.fontFamily = 'cursive';
-        helloJamshid.style.fontWeight = '900';
-        helloJamshid.style.fontSize = '70px';
-      } else if (age >= 60) {
-        bod.style.display = 'none';
-        div.style.display = 'none';
-        divv.style.display = 'flex';
-        divv.style.height = '100vh';
-        divv.style.width = '100%';
-        divv.style.backgroundColor = 'black';
-        divv.style.color = 'white';
-        divv.style.alignItems = 'center';
-        divv.style.justifyContent = 'center';
-        divv.style.fontFamily = 'cursive';
-        divv.style.fontWeight = '900';
-        divv.style.fontSize = '70px';
-      } else if (age >= 18) {
-        div.style.display = 'none';
-        divv.style.display = 'none';
-        bod.style.display = 'block'; // Show the form or main content
-      } else {
-        bod.style.display = 'none';
-        div.style.display = 'flex';
-        div.style.height = '100vh';
-        div.style.width = '100%';
-        div.style.backgroundColor = 'black';
-        div.style.color = 'white';
-        div.style.alignItems = 'center';
-        div.style.justifyContent = 'center';
-        div.style.fontFamily = 'cursive';
-        div.style.fontWeight = '900';
-        div.style.fontSize = '70px';
-        divv.style.display = 'none';
-      }
-    });
-  </script>
+    <div id="div">You are younger than 18 bro😂</div>
+    <div id="divv">Maaaan You are older than 60 🤪</div>
+    <div id="helloJamshid">Hello Jamshid</div>
+    <section id="bod">
+        <form onsubmit="sendMessage(event)">
+            <input id="name" placeholder="Enter Your Name" required class="input" type="text">
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </section>
+<script src="script.js"></script>
 </body>
 </html>
